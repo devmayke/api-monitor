@@ -17,7 +17,8 @@ function logAPI(){
   axios.get(endpoint)
   .then(data => {   
    if(data.status === 200){ 
-     console.clear()   
+     console.clear() 
+     console.log('Endpoint ',  endpoint)  
      console.log(`${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`)
      console.log("Status " +data.status)
   }else{
